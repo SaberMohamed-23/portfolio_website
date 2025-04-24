@@ -1,0 +1,194 @@
+body
+{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+
+    margin: 0%;
+    padding: 0%;
+
+    background-image: url("../images/brickwall.jpg");
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+h1
+{
+    color: white;
+}
+header
+{
+    color: black;
+    text-shadow: 0.14em 0.14em #2c2c2c;
+    border: 0.2em solid;
+    margin-top: 1em;
+    background-color: rgba(132, 43, 11, 0.818);
+    width: 50em;
+    text-align: center;
+    box-shadow: 0.60em 0.60em #2c2c2c;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    background-color: rgba(132, 43, 11, 0.82);
+    box-shadow: 0.625em 0.625em #2c2c2c; 
+    margin: 0.875em auto 0; 
+    width: 31.25em; 
+    border: 0.25em solid; 
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 1em;
+    font-size: 1.25em; 
+    list-style: none;
+    margin: 0.40em;
+}
+
+li {
+    color: white;
+    text-shadow: 0.125em 0.125em #2c2c2c; 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.1s ease;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+/* Artikel stijl */
+article {
+    color: black;
+    border: 0.25em solid black;
+    background-color: rgb(247, 236, 215);
+    text-align: center;
+    box-shadow: 7px 7px #2c2c2c;
+    width: 47em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+article:hover {
+    font-size: 1.01em;
+    transition: all 0.1s ease;
+
+}
+
+
+/* Blog stijl */
+.blog1 {
+    width: 30em;
+    padding: 0.7em;
+    background-color: rgb(247, 236, 215);
+    box-shadow: 7px 7px #2c2c2c;
+    margin-top: 4em;
+    transition: height 0.2s ease;
+}
+
+.projects {
+    color: black;
+    text-shadow: none;
+}
+.ul-projects {
+    display: block;
+}
+
+#more {
+    display: none;
+    width: 100%;
+    transition: display 0.2s ease;
+}
+
+#dots {
+    display: inline;
+}
+
+#btn {
+    text-decoration: underline;
+    color: rgb(160, 69, 36);
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#btn:hover {
+    font-size: 1.04em;
+}
+
+
+/* inhoud andere paginas*/
+.inhoud
+{
+    font-size: 1em;
+    width: 51em;
+    padding: 0.7em;
+    background-color: rgb(247, 236, 215);
+    box-shadow: 7px 7px #2c2c2c;
+    margin-top: 4em;
+}
+.hobbies-img {
+    width:50em;
+}
+.port-img {
+    width:7em;
+}
+.project-link {
+    text-decoration: none;
+    color: rgb(0, 34, 255);
+}
+.img-sbr {
+    width:18em;
+}
+.projects {
+    font-size:0.9em;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Footer stijl */
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgba(132, 43, 11, 0.818);
+    border: solid 0.5em rgba(29, 10, 4, 0.818);
+    margin-top: 2em;
+    padding: 0.20em;
+
+
+
+
+}
+.img-footer {
+    width:5em;
+}
+
+.footer-sect {
+    display: flex;
+    margin:1em;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.footer-ul {
+    display:block;
+    
+}
+
+.copy {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
