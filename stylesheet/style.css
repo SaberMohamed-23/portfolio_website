@@ -1,10 +1,8 @@
-body
-{
+/* Algemene stijl */
+body {
     font-family: Georgia, Times, 'Times New Roman', serif;
-
-    margin: 0%;
-    padding: 0%;
-
+    margin: 0;
+    padding: 0;
     background-image: url("../images/brickwall.jpg");
     font-size: 16px;
     display: flex;
@@ -12,45 +10,48 @@ body
     min-height: 100vh;
 }
 
-
-h1
-{
+h1 {
     color: white;
 }
-header
-{
+
+header {
     color: black;
     text-shadow: 0.14em 0.14em #2c2c2c;
     border: 0.2em solid;
     margin-top: 1em;
     background-color: rgba(132, 43, 11, 0.818);
+    max-width: 90%;
     width: 50em;
     text-align: center;
     box-shadow: 0.60em 0.60em #2c2c2c;
     margin-left: auto;
     margin-right: auto;
+    padding: 1em;
 }
 
 nav {
     background-color: rgba(132, 43, 11, 0.82);
-    box-shadow: 0.625em 0.625em #2c2c2c; 
-    margin: 0.875em auto 0; 
-    width: 31.25em; 
-    border: 0.25em solid; 
+    box-shadow: 0.625em 0.625em #2c2c2c;
+    margin: 0.875em auto 0;
+    max-width: 90%;
+    width: 31.25em;
+    border: 0.25em solid;
 }
 
 ul {
     display: flex;
     justify-content: space-around;
     padding: 0.5em 1em;
-    font-size: 1.25em; 
+    font-size: 1.25em;
     list-style: none;
     margin: 0.40em;
+    flex-wrap: wrap;
+    gap: 0.5em;
 }
 
 li {
     color: white;
-    text-shadow: 0.125em 0.125em #2c2c2c; 
+    text-shadow: 0.125em 0.125em #2c2c2c;
 }
 
 a {
@@ -72,26 +73,25 @@ article {
     background-color: rgb(247, 236, 215);
     text-align: center;
     box-shadow: 7px 7px #2c2c2c;
+    max-width: 90%;
     width: 47em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
+    margin: 2em auto;
+    padding: 1em;
 }
 
 article:hover {
     font-size: 1.01em;
     transition: all 0.1s ease;
-
 }
-
 
 /* Blog stijl */
 .blog1 {
-    width: 30em;
+    width: 90%;
+    max-width: 30em;
     padding: 0.7em;
     background-color: rgb(247, 236, 215);
     box-shadow: 7px 7px #2c2c2c;
-    margin-top: 4em;
+    margin: 4em auto 0;
     transition: height 0.2s ease;
 }
 
@@ -125,32 +125,35 @@ article:hover {
     font-size: 1.04em;
 }
 
-
-/* inhoud andere paginas*/
-.inhoud
-{
+/* Inhoud andere pagina’s */
+.inhoud {
     font-size: 1em;
-    width: 51em;
+    width: 90%;
+    max-width: 51em;
     padding: 0.7em;
     background-color: rgb(247, 236, 215);
     box-shadow: 7px 7px #2c2c2c;
-    margin-top: 4em;
+    margin: 4em auto 0;
 }
+
 .hobbies-img {
-    width:50em;
+    width: 100%;
+    max-width: 50em;
 }
 .port-img {
-    width:7em;
+    width: 5em;
+    max-width: 100%;
 }
 .project-link {
     text-decoration: none;
     color: rgb(0, 34, 255);
 }
 .img-sbr {
-    width:18em;
+    width: 100%;
+    max-width: 18em;
 }
 .projects {
-    font-size:0.9em;
+    font-size: 0.9em;
 }
 
 main {
@@ -160,35 +163,61 @@ main {
 /* Footer stijl */
 footer {
     width: 100%;
-    height: auto;
     background-color: rgba(132, 43, 11, 0.818);
     border: solid 0.5em rgba(29, 10, 4, 0.818);
     margin-top: 2em;
-    padding: 0.20em;
-
-
-
-
+    padding: 0.5em;
+    box-sizing: border-box;
 }
+
 .img-footer {
-    width:5em;
+    width: 4em;
 }
 
 .footer-sect {
     display: flex;
-    margin:1em;
+    margin: 1em;
     justify-content: space-between;
-    flex-direction: row;
-    
+    flex-wrap: wrap;
+    gap: 1em;
 }
+
 .footer-ul {
-    display:block;
-    
+    display: block;
 }
 
 .copy {
     color: white;
     display: flex;
     justify-content: center;
+    padding-top: 1em;
 }
 
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-sect {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .port-img {
+        width: 4em;
+    }
+
+    .img-footer {
+        width: 3em;
+    }
+
+    header, nav, article, .inhoud {
+        width: 95%;
+    }
+
+    .hobbies-img {
+        max-width: 100%;
+    }
+}
